@@ -1,0 +1,25 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+header {
+  background-color: #040d22;
+}
+
+/* header .container {
+  display: flex
+  align-items: center
+  padding-top: 16px;
+  padding-bottom: 16px;
+} */
+
+header .forms input.form-control {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+header .forms input.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
