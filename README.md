@@ -8,12 +8,9 @@ GitHub 랜딩 페이지를 클론 코딩합니다.
 
 ```html
 <!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
-body {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-}
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet" />
+body { font-family: 'Poppins', sans-serif; font-weight: 300; }
 ```
 
 ### YouTube
@@ -30,18 +27,18 @@ body {
   function initMap() {
     const myLatLng = {
       lat: 37.782293,
-      lng: -122.391240
-    }
-    const map = new google.maps.Map(document.getElementById('map'), {
+      lng: -122.39124,
+    };
+    const map = new google.maps.Map(document.getElementById("map"), {
       center: myLatLng,
       scrollwheel: false,
-      zoom: 18
-    })
+      zoom: 18,
+    });
     const marker = new google.maps.Marker({
       position: myLatLng,
       map: map,
-      title: 'GitHub'
-    })
+      title: "GitHub",
+    });
   }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap" async defer></script>
@@ -53,7 +50,6 @@ body {
 <!--HERO-->
 <h1>Where the world builds software</h1>
 <p>Millions of developers and companies build, ship, and maintain their software on GitHub—the largest and most advanced development platform in the world.</p>
-
 
 <!--FEATURES-->
 <h5><strong>For everything you build</strong></h5>
@@ -68,11 +64,9 @@ body {
 <h5><strong>One platform, from start to finish</strong></h5>
 <p>With hundreds of integrations, GitHub is flexible enough to be at the center of your development process.</p>
 
-
 <!--MAP-->
 <h1>Where is GitHub?</h1>
 <p>GitHub is where people build software. More than 18 million people use GitHub to discover, fork, and contribute to over 48 million projects.</p>
-
 
 <!--FOOTER-->
 <h5>Product</h5>
