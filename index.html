@@ -28,6 +28,27 @@
     ></script>
 
     <link rel="stylesheet" href="./main.css" />
+
+    <script>
+      // Initialize Google Map.
+      function initMap() {
+        const myLatLng = {
+          lat: 37.782293,
+          lng: -122.39124,
+        };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          center: myLatLng,
+          scrollwheel: false,
+          zoom: 18,
+        });
+        const marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: "GitHub",
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap" async defer></script>
   </head>
   <body>
     <!-- HERO -->
@@ -140,6 +161,21 @@
                 <p class="card-text">With hundreds of integrations, GitHub is flexible enough to be at the center of your development process.</p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <h1>Where is GitHub?</h1>
+            <p>GitHub is where people build software. More than 18 million people use GitHub to discover, fork, and contribute to over 48 million projects.</p>
+          </div>
+          <div class="col-8">
+            <div id="map" class="shadow"></div>
           </div>
         </div>
       </div>
